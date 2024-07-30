@@ -1,23 +1,42 @@
-.App {
-  text-align: center;
-  font-family: Arial, sans-serif;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
+.App {
+  height: 100%;
+}
 
 .App-header {
-  background-color: #282c34;
-  padding: 20px;
+  background-image: url('/Users/jeremiahmarrujo/WeatherApp/my-portfolio/public/images/image5.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: white;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
 }
 
 nav ul {
   list-style-type: none;
-  padding: 0; 
+  display: flex;
+  gap: 1em;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 10px;
+  margin: 0 1em;
 }
 
 nav ul li a {
@@ -25,51 +44,22 @@ nav ul li a {
   text-decoration: none;
 }
 
-section {
-  padding: 20px;
-  margin: 20px;
+h1, h2, p {
+  margin: 0;
 }
 
-section {
-  padding: 20px;
-  margin: 20px;
+h1 {
+  font-size: 3em;
 }
 
 h2 {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
+  font-size: 2em;
+  margin-top: 0.5em;
 }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-}
-.project-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 8px 8px 0 0;
-}
-
-.project-card h3 {
-  margin-top: 0;
-}
-
-.project-card a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.project-card a:hover{
-  text-decoration: underline;
+.profile-picture {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
 }
